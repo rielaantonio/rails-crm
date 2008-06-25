@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  company_id: 
+  company_name_relationship_id: 
+
+two:
+  name: MyString
+  company_id: 
+  company_name_relationship_id: 

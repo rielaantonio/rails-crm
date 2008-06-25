@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  line1: MyString
+  line2: MyString
+  city_id: 
+  state_id: 
+  zipcode_id: 
+  county_id: 
+  country_id: 
+
+two:
+  line1: MyString
+  line2: MyString
+  city_id: 
+  state_id: 
+  zipcode_id: 
+  county_id: 
+  country_id: 

@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  state_id: 
+  zip: 
+
+two:
+  state_id: 
+  zip: 

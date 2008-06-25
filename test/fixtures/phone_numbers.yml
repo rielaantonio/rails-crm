@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  phone_number_relationship_id: 
+  number: 
+  country_id: 
+
+two:
+  phone_number_relationship_id: 
+  number: 
+  country_id: 
