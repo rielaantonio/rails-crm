@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  instant_messenger_network_id: 
+
+two:
+  name: MyString
+  instant_messenger_network_id: 

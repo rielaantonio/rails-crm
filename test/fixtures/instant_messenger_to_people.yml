@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  instant_messenger_id: 
+  instant_messenger_relationship_id: 
+  person_id: 
+
+two:
+  instant_messenger_id: 
+  instant_messenger_relationship_id: 
+  person_id: 

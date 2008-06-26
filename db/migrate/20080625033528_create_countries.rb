@@ -7,8 +7,6 @@ class CreateCountries < ActiveRecord::Migration
 
       t.timestamps
     end
-
-    Country.create!(:name => 'United States of America', :abbr => 'USA', :phone_prefix => 1)
   end
 
   def self.down
