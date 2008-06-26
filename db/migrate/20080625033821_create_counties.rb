@@ -1,7 +1,7 @@
 class CreateCounties < ActiveRecord::Migration
   def self.up
     create_table :counties do |t|
-      t.int :state_id
+      t.integer :state_id
       t.string :name
 
       t.timestamps

@@ -3,11 +3,11 @@ class CreateLocations < ActiveRecord::Migration
     create_table :locations do |t|
       t.string :line1
       t.string :line2
-      t.int :city_id
-      t.int :state_id
-      t.int :zipcode_id
-      t.int :county_id
-      t.int :country_id
+      t.integer :city_id
+      t.integer :state_id
+      t.integer :zipcode_id
+      t.integer :county_id
+      t.integer :country_id
 
       t.timestamps
     end

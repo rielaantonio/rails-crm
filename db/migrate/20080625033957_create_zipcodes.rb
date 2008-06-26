@@ -1,8 +1,8 @@
 class CreateZipcodes < ActiveRecord::Migration
   def self.up
     create_table :zipcodes do |t|
-      t.int :state_id
-      t.bigint :zip
+      t.integer :state_id
+      t.integer :zipcode
 
       t.timestamps
     end

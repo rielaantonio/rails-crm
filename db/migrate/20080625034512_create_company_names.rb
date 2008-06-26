@@ -2,8 +2,8 @@ class CreateCompanyNames < ActiveRecord::Migration
   def self.up
     create_table :company_names do |t|
       t.string :name
-      t.int :company_id
-      t.int :company_name_relationship_id
+      t.integer :company_id
+      t.integer :company_name_relationship_id
 
       t.timestamps
     end
