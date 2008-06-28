@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  password: MyString
+  lastauth: 2008-06-26 15:02:27
+
+two:
+  password: MyString
+  lastauth: 2008-06-26 15:02:27

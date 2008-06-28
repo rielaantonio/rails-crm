@@ -5,6 +5,10 @@ class CreateCompanyNameRelationships < ActiveRecord::Migration
 
       t.timestamps
     end
+
+    CompanyNameRelationship.create!(:name => 'Active')
+    CompanyNameRelationship.create!(:name => 'Former')
+    CompanyNameRelationship.create!(:name => 'Abbreviation')
   end
 
   def self.down

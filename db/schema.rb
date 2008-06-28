@@ -9,7 +9,28 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20080626000528) do
+ActiveRecord::Schema.define(:version => 20080626200652) do
+
+  create_table "auth_accounts", :force => true do |t|
+    t.string   "password"
+    t.datetime "lastauth"
+    t.integer  "person_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "auth_group_members", :force => true do |t|
+    t.integer  "auth_account_id"
+    t.integer  "auth_group_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "auth_groups", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "cities", :force => true do |t|
     t.integer  "state_id"
@@ -187,6 +208,11 @@ ActiveRecord::Schema.define(:version => 20080626000528) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_foreign_key "auth_accounts", ["person_id"], "people", ["id"], :name => "auth_accounts_person_id_fkey"
+
+  add_foreign_key "auth_group_members", ["auth_account_id"], "auth_accounts", ["id"], :name => "auth_group_members_auth_account_id_fkey"
+  add_foreign_key "auth_group_members", ["auth_group_id"], "auth_groups", ["id"], :name => "auth_group_members_auth_group_id_fkey"
 
   add_foreign_key "cities", ["state_id"], "states", ["id"], :name => "cities_state_id_fkey"
 
