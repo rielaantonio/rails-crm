@@ -17,7 +17,7 @@
   </p>
   <p>
     <%= f.label :state_id %><br />
-    <%= f.text_field :state_id %>
+    <%= collection_select :location, :state_id, State.find(:all), :id, :abbr_and_name, :include_blank => true %>
   </p>
   <p>
     <%= f.label :zipcode_id %><br />
@@ -29,7 +29,7 @@
   </p>
   <p>
     <%= f.label :country_id %><br />
-    <%= f.text_field :country_id %>
+    <%= collection_select :location, :country_id, Country.find(:all), :id, :abbr_and_name, :include_blank => true %>
   </p>
   <p>
     <%= f.submit "Create" %>

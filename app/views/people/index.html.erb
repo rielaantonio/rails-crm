@@ -2,19 +2,17 @@
 
 <table>
   <tr>
-    <th>First</th>
-    <th>Middle</th>
-    <th>Last</th>
-    <th>Notes</th>
+    <th><!-- Flags --></th>
+    <th>Name</th>
+    <th>Background</th>
     <th>Birthdate</th>
   </tr>
 
 <% for person in @people %>
   <tr>
-    <td><%=h person.first %></td>
-    <td><%=h person.middle %></td>
-    <td><%=h person.last %></td>
-    <td><%=h person.notes %></td>
+    <td><% if person.has_authentication %>icon<% end %></td>
+    <td><%=h person.name %></td>
+    <td><%=h person.background %></td>
     <td><%=h person.birthdate %></td>
     <td><%= link_to 'Show', person %></td>
     <td><%= link_to 'Edit', edit_person_path(person) %></td>
@@ -22,6 +20,10 @@
   </tr>
 <% end %>
 </table>
+
+<br />
+
+<%= will_paginate @people %>
 
 <br />
 
