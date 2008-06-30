@@ -3,6 +3,7 @@
 <table>
   <tr>
     <th><!-- Flags --></th>
+    <th><!-- Avatar --></th>
     <th>Name</th>
     <th>Background</th>
     <th>Birthdate</th>
@@ -10,7 +11,8 @@
 
 <% for person in @people %>
   <tr>
-    <td><% if person.has_authentication %>icon<% end %></td>
+    <td><% if person.authentication %>auth<% end %></td>
+    <td><img src="<%= person.avatar_thumb_url %>" alt="<%= person.name %>" /></td>
     <td><%=h person.name %></td>
     <td><%=h person.background %></td>
     <td><%=h person.birthdate %></td>
